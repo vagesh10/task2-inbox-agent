@@ -12,7 +12,7 @@ const testDirectory = fs.mkdtempSync(
 process.env.INBOX_DB_PATH = path.join(testDirectory, "test.db");
 process.env.PORT = "0";
 
-const { app, db } = require("./server");
+const { app, db } = require("./dist/server");
 
 let server;
 let baseUrl;
